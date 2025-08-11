@@ -5,7 +5,10 @@ const { userModel } = require("../Models/userModel");
 //importing verification token utility
 const { verificationToken } = require("../Utils/VerificationToken");
 const { generateTokenSetCookie } = require("../Utils/GenerateTOKENSetCOOKIE");
-const { sendVerificationEmail } = require("../mailtrap/emails");
+const {
+  sendVerificationEmail,
+  sendWelcomeEmail,
+} = require("../mailtrap/emails");
 //importing validators
 const {
   registerValidation,
